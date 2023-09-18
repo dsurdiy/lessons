@@ -1,0 +1,67 @@
+/* Обнулення стилів */
+
+@import url("reset.css");
+
+/* Основні стилі */
+
+* {
+  color: brown;
+}
+
+p {
+  color: black;
+}
+
+.hero-title,
+#hero-text p {
+  color: red;
+}
+
+[class*="title"] {
+  color: red;
+}
+
+.title,
+h3 {
+  color: green;
+}
+
+.navigation a {
+  color: goldenrod;
+}
+
+.models-content p {
+  color: rebeccapurple;
+}
+
+.updates-item.item {
+  color: turquoise;
+}
+
+li.updates-item {
+  color: blueviolet;
+}
+
+.updates-list .updates-item {
+  color: teal;
+}
+
+div.text span {
+  color: blue;
+}
+
+.text > p {
+  color: aqua;
+}
+
+.text ~ .sub-title {
+  color: greenyellow;
+}
+
+.models-item + .models-item mark {
+  color: tomato;
+}
+
+.navigation + .source-link {
+  color: aquamarine;
+}
