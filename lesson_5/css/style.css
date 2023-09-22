@@ -1,0 +1,122 @@
+/* Підключення шрифтів через Google Fonts */
+@import url(https://fonts.googleapis.com/css?family=Inter:regular,500,700&display=swap);
+@import url(https://fonts.googleapis.com/css?family=Poppins:600,700&display=swap);
+
+/* Підключення шрифтів вручну */
+@import url("fonts.css");
+
+/* Обнулення стилів */
+@import url("reset.css");
+
+/* Основні стилі */
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  color: #7d7d7d;
+}
+
+.page-nav {
+  color: #ff6347;
+  line-height: 1.2;
+  text-decoration: underline;
+  font-style: oblique;
+  text-align: center;
+}
+
+.hw-link {
+  color: #008000;
+}
+
+.title,
+.sub-title,
+.label {
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  color: #000000;
+  line-height: 1.3;
+  text-align: center;
+  letter-spacing: 2px;
+  text-transform: capitalize;
+}
+
+.title {
+  font-size: 30px;
+  text-shadow: 8px 8px 10px rgba(142, 193, 142, 0.929);
+}
+
+.sub-title {
+  font-size: 24px;
+  text-shadow: 5px 5px 7px hsla(34, 73%, 39%, 0.515);
+}
+
+.label {
+  font-size: 20px;
+  text-shadow: 3px 3px 5px rgba(168, 17, 17, 0.754);
+}
+
+.text p {
+  line-height: 1.4;
+  text-align: justify;
+  text-indent: 20px;
+  text-transform: uppercase;
+}
+
+.text p + p {
+  text-transform: none;
+}
+
+.image {
+  text-align: center;
+}
+
+.advantages-item {
+  text-indent: 50px;
+  color: #007c80;
+  text-decoration: line-through;
+  line-height: 1.5;
+}
+
+.conclusions-list > li {
+  color: hsla(255, 100%, 25%, 0.813);
+  line-height: 1.5;
+  text-decoration: overline;
+}
+
+.block {
+  font-family: "Inter", sans-serif;
+  line-height: 1.46;
+}
+
+.block-title,
+.block-subtitle {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  line-height: 1.27;
+}
+
+.block-title {
+  font-size: 30px;
+  color: #37393f;
+  text-transform: capitalize;
+}
+
+.block-subtitle {
+  font-size: 20px;
+  color: #6b77e5;
+}
+
+.project .block-title {
+  text-transform: capitalize;
+  font-size: 40px;
+  font-weight: 700;
+}
+
+.block-list li {
+  font-weight: 500;
+  text-indent: 30px;
+}
+
+.article-link {
+  color: #7fffd4;
+}
