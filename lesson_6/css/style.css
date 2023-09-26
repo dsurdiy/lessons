@@ -1,0 +1,234 @@
+/* Шрифти */
+@import url(https://fonts.googleapis.com/css?family=Inter:regular&family=DM+Serif+Text:regular&family=Poppins:600&display=swap);
+
+/* Обнулення стилів */
+@import url("reset.css");
+
+/* Основні стилі */
+
+body {
+  font-family: "Inter", sans-serif;
+  font-size: 20px;
+  color: #474747;
+}
+
+.header {
+  max-width: 1230px;
+  padding: 30px 15px;
+  margin: 0 auto 50px;
+}
+
+.menu {
+  text-align: center;
+}
+
+.menu-item {
+  display: inline-block;
+  margin-right: 30px;
+}
+
+.menu-link {
+  font-size: 20px;
+  color: #ff0000;
+  text-decoration: underline;
+  text-shadow: 5px 7px 8px #000000;
+  letter-spacing: 2px;
+}
+
+.jewellery,
+.consulting {
+  max-width: 1230px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.jewellery {
+  margin-bottom: 150px;
+}
+
+.jewellery-content {
+  display: inline-block;
+  max-width: 563px;
+  margin-right: 38px;
+}
+
+.jewellery .sub-title {
+  color: #d06b00;
+  font-size: 28px;
+  text-transform: uppercase;
+  margin-bottom: 13px;
+}
+
+.jewellery .title {
+  font-family: "DM Serif Text", serif;
+  font-size: 59px;
+  line-height: 1.46;
+  margin-bottom: 25px;
+}
+
+.jewellery .text p {
+  line-height: 1.8;
+}
+
+.jewellery img + img {
+  margin-left: 22px;
+}
+
+.consulting {
+  font-size: 18px;
+  color: #7d7d7d;
+  margin-bottom: 150px;
+}
+
+.consulting-content {
+  max-width: 692px;
+  margin: 0 auto;
+}
+
+.consulting-image {
+  margin-bottom: 37px;
+}
+
+.consulting .title,
+.consulting .sub-title,
+.benefits-title,
+.benefits-subtitle {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  line-height: 1.27;
+}
+
+.consulting .title {
+  color: #37393f;
+  font-size: 30px;
+  text-transform: capitalize;
+  margin-bottom: 10px;
+}
+
+.consulting .text {
+  line-height: 1.46;
+  margin-bottom: 42px;
+}
+
+.consulting .sub-title {
+  color: #6b77e5;
+  font-size: 20px;
+  margin-bottom: 12px;
+}
+
+.benefits-image {
+  margin-right: 23px;
+}
+
+.benefits {
+  display: inline-block;
+  max-width: 332px;
+}
+
+.benefits-title {
+  color: #37393f;
+  font-size: 25px;
+  margin-bottom: 15px;
+}
+
+.benefits-subtitle {
+  color: #40ddb6;
+  font-size: 20px;
+  margin-bottom: 23px;
+}
+
+.benefits-item + .benefits-item {
+  margin-top: 30px;
+}
+
+.footer {
+  padding: 30px 15px;
+  text-align: center;
+}
+
+.footer .navigation {
+  margin-bottom: 30px;
+}
+
+.top-link {
+  color: #adff2f;
+  font-size: 20px;
+  text-decoration: underline;
+  text-transform: uppercase;
+  text-shadow: 3px 3px 7px #ff0000;
+}
+
+/* ======================= Практика ======================== */
+
+.practice {
+  font-family: "DM Serif Text", serif;
+  font-size: 22px;
+  color: #0000ff;
+  line-height: 1.2;
+  max-width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto 150px;
+}
+
+.block-1,
+.block-2 {
+  display: inline-block;
+  width: 49%;
+  vertical-align: top;
+}
+
+.block-3 {
+  margin: 50px auto 30px;
+  max-width: 300px;
+  height: 150px;
+  overflow: auto;
+}
+
+.block-4 {
+  max-width: 50%;
+  margin: 0 auto 50px;
+}
+
+.container {
+  max-width: 1230px;
+  padding: 15px;
+  margin: 0 auto 50px;
+  text-align: center;
+}
+
+.block-5,
+.block-6,
+.block-7,
+.block-8 {
+  max-width: 210px;
+  display: inline-block;
+  margin-right: 15px;
+  vertical-align: top;
+  padding: 15px;
+}
+
+.block-5 {
+  height: 150px;
+  overflow: hidden;
+}
+
+.block-6 {
+  max-height: 200px;
+  overflow: scroll;
+}
+
+.block-7 {
+  max-height: 250px;
+  overflow: auto;
+}
+
+.block-8 {
+  overflow: visible;
+}
+
+.block-9 {
+  box-sizing: content-box;
+  width: 600px;
+  margin: 0 auto;
+  padding: 50px;
+}
