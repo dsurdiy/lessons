@@ -1,0 +1,388 @@
+@import url("fonts.css");
+@import url("reset.css");
+
+body {
+  font-size: 20px;
+}
+
+.header,
+.footer {
+  max-width: 1230px;
+  padding: 0 15px;
+  margin: 0 auto 50px;
+  background-color: tomato;
+}
+
+.nav-list {
+  font-size: 0;
+  text-align: center;
+}
+
+.nav-list li {
+  display: inline-block;
+  margin-right: 30px;
+}
+
+.nav-list a {
+  display: inline-block;
+  font-size: 24px;
+  color: #ffff00;
+  padding: 20px;
+  letter-spacing: 2px;
+  text-decoration: underline;
+}
+
+/* ============== Practice ================ */
+
+.practice {
+  max-width: 1230px;
+  padding: 50px 15px;
+  margin: 0 auto;
+  background-color: #6ca21b;
+}
+
+.block {
+  padding: 20px;
+  margin-bottom: 30px;
+
+  /* background-color: #929292; */
+  /* background-image: url("../img/honey.jpg"); */
+  /* background-image: linear-gradient(58deg, rgba(2,0,36,1) 0%, rgba(9,121,42,1) 33%, rgba(0,212,255,1) 100%); */
+  /* background-repeat: no-repeat; */
+  /* background-position: left; */
+  /* background-attachment: scroll; */
+  /* background-size: auto 500px; */
+  /* background-size: cover; */
+
+  /* background: #adff2f url("../img/image-01.jpg") center / cover no-repeat; */
+
+  /* background: url("../img/image-02.jpg") left / cover no-repeat; */
+
+  background: url("../img/honey.jpg") no-repeat 0 0 / 200px,
+    url("../img/image-01.jpg") no-repeat right / contain,
+    linear-gradient(
+      58deg,
+      rgba(2, 0, 36, 1) 0%,
+      rgba(121, 86, 9, 1) 67%,
+      rgba(255, 0, 54, 1) 100%
+    );
+}
+
+.inline {
+  background-color: #daa520;
+
+  /* background-image: linear-gradient(58deg, rgba(2,0,36,1) 0%, rgba(121,86,9,1) 33%, rgba(255,0,54,1) 100%); */
+
+  background: #ff6347 url("../img/image-01.jpg") 0 0 / cover no-repeat;
+}
+
+/* ============== Task 1 ================ */
+
+.mission {
+  font-family: "Inter", sans-serif;
+  font-size: 18px;
+  color: #7d7d7d;
+  max-width: 703px;
+  padding: 100px 15px;
+  margin: 0 auto;
+}
+
+.pretitle-box {
+  font-size: 0;
+  margin-bottom: 16px;
+}
+
+.decor {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  background-color: #40ddb6;
+  margin-right: 6px;
+  margin-bottom: 1px;
+}
+
+.pretitle {
+  display: inline-block;
+  color: #37393f;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.title {
+  max-width: 415px;
+  font-family: "Poppins", sans-serif;
+  color: #37393f;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 1.21;
+  margin-bottom: 20px;
+  text-transform: capitalize;
+}
+
+.mission .text {
+  margin-bottom: 20px;
+  line-height: 1.46;
+}
+
+.mission .text p {
+  margin-bottom: 15px;
+}
+
+.mission .list {
+  margin-bottom: 43px;
+}
+
+.mission .list li {
+  font-family: "Poppins", sans-serif;
+  color: #37393f;
+  font-size: 20px;
+  padding-left: 35px;
+  background: url("../img/li.svg") 0 2px no-repeat;
+  line-height: 1.46;
+  margin-bottom: 23px;
+}
+
+.mission .features {
+  margin-bottom: 37px;
+  font-size: 0;
+}
+
+.mission .features-item {
+  display: inline-block;
+  max-width: 297px;
+  padding: 32px;
+  border: 1px solid #e3e3e3;
+  font-size: 16px;
+  margin-right: 21px;
+}
+
+.mission .features-inner {
+  padding-top: 3px;
+  padding-left: 59px;
+}
+
+.mission .features-inner.features-experience {
+  background: url("../img/features-1.svg") no-repeat;
+}
+
+.mission .features-inner.features-awards {
+  background: url("../img/features-2.svg") no-repeat;
+}
+
+.mission .features-inner h5 {
+  font-family: "Poppins", sans-serif;
+  color: #37393f;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 3px;
+  line-height: 1.46;
+}
+
+.mission .features-inner p {
+  color: #7d7d7d;
+  line-height: 1.35;
+}
+
+.mission .more {
+  display: inline-block;
+  padding: 22px 27px;
+  color: #fff;
+  font-weight: 600;
+  text-transform: capitalize;
+  background-color: #6b77e5;
+}
+
+/* ============== Task 2 ================ */
+
+.projects {
+  max-width: 1250px;
+  padding: 100px 15px;
+  margin: 0 auto;
+  font-family: "Inter", sans-serif;
+  font-size: 18px;
+  color: #7d7d7d;
+}
+
+.projects-header {
+  text-align: center;
+  margin-bottom: 47px;
+}
+
+.projects .pretitle-box {
+  margin-bottom: 14px;
+}
+
+.projects .title {
+  max-width: 100%;
+  margin-bottom: 14px;
+}
+
+.projects .text {
+  max-width: 850px;
+  margin: 0 auto;
+  line-height: 1.46;
+}
+
+.projects-items {
+  font-size: 0;
+}
+
+.projects-item {
+  width: 384px;
+  display: inline-block;
+  margin-right: 34px;
+  margin-bottom: 58px;
+}
+
+.projects-item-right {
+  margin-right: 0;
+}
+
+.projects-image {
+  height: 501px;
+  margin-bottom: 24px;
+}
+
+.projects-image.projects-image-1 {
+  background: url("../img/projects/01.jpeg");
+}
+
+.projects-image.projects-image-2 {
+  background: url("../img/projects/02.jpeg");
+}
+
+.projects-image.projects-image-3 {
+  background: url("../img/projects/03.jpeg");
+}
+
+.projects-image.projects-image-4 {
+  background: url("../img/projects/04.jpeg");
+}
+
+.projects-image.projects-image-5 {
+  background: url("../img/projects/05.jpeg");
+}
+
+.projects-image.projects-image-6 {
+  background: url("../img/projects/06.jpeg");
+}
+
+.projects-text h4 {
+  font-family: "Poppins", sans-serif;
+  color: #37393f;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.27;
+  margin-bottom: 10px;
+}
+
+.projects-text p {
+  font-size: 14px;
+  line-height: 1.46;
+  padding-left: 25px;
+  background: url("../img/date.svg") no-repeat;
+}
+
+/* =================== Task 3 =================== */
+
+.clothing {
+  color: #807d7e;
+  font-family: "Causten", sans-serif;
+  font-size: 20px;
+  max-width: 1240px;
+  padding: 100px 20px;
+  margin: 0 auto;
+}
+
+.clothing .title,
+.clothing .sub-title,
+.clothing .link {
+  font-family: "CoreSansC", sans-serif;
+  font-weight: 600;
+}
+
+.clothing .title {
+  display: inline-block;
+  max-width: 100%;
+  color: #3c4242;
+  font-size: 28px;
+  letter-spacing: 0.56px;
+  line-height: 1.2;
+  margin-bottom: 30px;
+  background: url("../img/decor.svg") no-repeat;
+  margin-left: -21px;
+  padding-left: 21px;
+}
+
+.clothing .sub-title {
+  font-size: 20px;
+  letter-spacing: 0.4px;
+  margin-bottom: 25px;
+  line-height: 1.67;
+}
+
+.clothing .text {
+  margin-bottom: 20px;
+}
+
+.clothing .text p {
+  line-height: 1.67;
+  letter-spacing: 0.4px;
+  margin-bottom: 20px;
+}
+
+.clothing .text span {
+  font-weight: 700;
+}
+
+.clothing .link {
+  font-size: 20px;
+  line-height: 1.67;
+  letter-spacing: 0.4px;
+}
+
+/* ============== Task 4 ================ */
+
+.fashion {
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 180px 74px 174px;
+  font-family: "Causten", sans-serif;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 300;
+  background: url("../img/fashion/bg-01.jpeg") 0 0 / 50% 100% no-repeat,
+    url("../img/fashion/bg-02.jpeg") right top / 50% 100% no-repeat;
+  margin-bottom: 100px;
+}
+
+.fashion-content {
+  max-width: 466px;
+}
+
+.fashion-content h2 {
+  font-family: "CoreSansC", sans-serif;
+  font-size: 34px;
+  font-weight: 800;
+  line-height: 1.47;
+  letter-spacing: 0.208px;
+  margin-bottom: 25px;
+}
+
+.fashion-text {
+  margin-bottom: 50px;
+}
+
+.fashion-text p {
+  letter-spacing: 1px;
+  line-height: normal;
+}
+
+.fashion-link {
+  display: inline-block;
+  padding: 12px 44px;
+  color: #3c4242;
+  font-weight: 600;
+  background-color: #fff;
+  border-radius: 8px;
+}
