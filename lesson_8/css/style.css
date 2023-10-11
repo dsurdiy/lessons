@@ -228,7 +228,8 @@ body {
 }
 
 .projects-item {
-  width: 384px;
+  max-width: 384px;
+  width: 100%;
   display: inline-block;
   margin-right: 34px;
   margin-bottom: 58px;
@@ -244,27 +245,27 @@ body {
 }
 
 .projects-image.projects-image-1 {
-  background: url("../img/projects/01.jpeg");
+  background: url("../img/projects/01.jpeg") center / cover no-repeat;
 }
 
 .projects-image.projects-image-2 {
-  background: url("../img/projects/02.jpeg");
+  background: url("../img/projects/02.jpeg") center / cover no-repeat;
 }
 
 .projects-image.projects-image-3 {
-  background: url("../img/projects/03.jpeg");
+  background: url("../img/projects/03.jpeg") center / cover no-repeat;
 }
 
 .projects-image.projects-image-4 {
-  background: url("../img/projects/04.jpeg");
+  background: url("../img/projects/04.jpeg") center / cover no-repeat;
 }
 
 .projects-image.projects-image-5 {
-  background: url("../img/projects/05.jpeg");
+  background: url("../img/projects/05.jpeg") center / cover no-repeat;
 }
 
 .projects-image.projects-image-6 {
-  background: url("../img/projects/06.jpeg");
+  background: url("../img/projects/06.jpeg") center / cover no-repeat;
 }
 
 .projects-text h4 {
@@ -346,18 +347,20 @@ body {
 .fashion {
   max-width: 1240px;
   margin: 0 auto;
-  padding: 180px 74px 174px;
   font-family: "Causten", sans-serif;
   color: #fff;
-  font-size: 20px;
+  font-size: 0;
   font-weight: 300;
-  background: url("../img/fashion/bg-01.jpeg") 0 0 / 50% 100% no-repeat,
-    url("../img/fashion/bg-02.jpeg") right top / 50% 100% no-repeat;
   margin-bottom: 100px;
 }
 
 .fashion-content {
-  max-width: 466px;
+  display: inline-block;
+  max-width: 614px;
+  width: 100%;
+  padding: 183px 74px 174px;
+  background: url("../img/fashion/bg-01.jpeg") center / cover no-repeat;
+  border-radius: 8px 0 0 8px;
 }
 
 .fashion-content h2 {
@@ -371,6 +374,7 @@ body {
 
 .fashion-text {
   margin-bottom: 50px;
+  font-size: 20px;
 }
 
 .fashion-text p {
@@ -382,7 +386,18 @@ body {
   display: inline-block;
   padding: 12px 44px;
   color: #3c4242;
+  font-size: 18px;
   font-weight: 600;
   background-color: #fff;
   border-radius: 8px;
+}
+
+.fashion-box {
+  display: inline-block;
+  max-width: 626px;
+  width: 100%;
+  min-height: 645px;
+  background: url("../img/fashion/bg-02.jpeg") center / cover no-repeat;
+  vertical-align: bottom;
+  border-radius: 0 8px 8px 0;
 }
