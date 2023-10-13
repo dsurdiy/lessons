@@ -1,0 +1,668 @@
+@import url("fonts.css");
+@import url("reset.css");
+
+body {
+  font-size: 20px;
+}
+
+.header,
+.footer {
+  max-width: 1230px;
+  margin: 0 auto;
+  padding: 0 15px;
+  background-color: thistle;
+}
+
+.nav {
+  text-align: center;
+  font-size: 24px;
+  color: #6b77e5;
+}
+
+.nav li {
+  display: inline-block;
+}
+
+.nav li a {
+  padding: 30px;
+}
+
+.nav li a:hover {
+  text-decoration: underline;
+}
+
+/* =========== Practice =========== */
+
+.practice {
+  max-width: 1430px;
+  padding: 100px 15px;
+  margin: 0 auto;
+}
+
+.test {
+  padding: 25px;
+  background-color: rgb(230, 226, 226);
+  border: 2px solid green;
+  border-radius: 10px;
+  max-width: 500px;
+  margin: 0 auto 50px;
+}
+
+.link {
+  font-size: 28px;
+  color: yellow;
+}
+
+.link:visited {
+  color: goldenrod;
+}
+
+.text {
+  display: none;
+}
+
+.text:target {
+  display: block;
+}
+
+.image {
+  display: none;
+}
+
+.test:hover .link {
+  color: red;
+}
+
+.test:hover .image {
+  display: block;
+}
+
+.test-2 {
+  text-align: center;
+  padding: 25px;
+  background-color: tomato;
+  font-size: 30px;
+}
+
+.link-2:hover {
+  color: greenyellow;
+  text-decoration: underline;
+}
+
+.link-2:active {
+  color: red;
+}
+
+.link-2:visited {
+  color: grey;
+}
+
+.link:focus,
+.link-2:focus {
+  outline: 3px dotted blue;
+}
+
+.block {
+  display: none;
+  padding: 30px;
+}
+
+.block:target {
+  display: block;
+}
+
+.block p:first-child {
+  background-color: red;
+}
+
+.block p:first-of-type {
+  background-color: green;
+}
+
+.block p:last-child {
+  text-transform: uppercase;
+}
+
+.block p:last-of-type {
+  text-transform: uppercase;
+}
+
+.list {
+  padding-left: 30px;
+}
+
+.item {
+  padding: 10px;
+}
+
+.item:nth-child(2) {
+  color: blue;
+}
+
+.item:nth-child(odd) {
+  background-color: grey;
+}
+
+.item:nth-child(even) {
+  text-align: center;
+  text-decoration: underline;
+  background-color: yellowgreen;
+}
+
+.item:not(:last-child) {
+  margin-bottom: 15px;
+}
+
+.item::before {
+  content: "";
+  width: 27px;
+  height: 27px;
+  background: url("../img/li.svg") 0 0 no-repeat;
+  margin-right: 15px;
+}
+
+.item::after {
+  content: "";
+  width: 20px;
+  height: 20px;
+  background-color: red;
+  border-radius: 50%;
+  transition: all 0.8s ease 0s;
+}
+
+.item:hover::after {
+  transform: scale(1.9);
+}
+
+.list-2 {
+  counter-reset: item;
+}
+
+.list-2 li::before {
+  counter-increment: item;
+  content: counter(item) ". ";
+  margin-right: 5px;
+  color: green;
+}
+
+/* =========== Game =========== */
+
+.game {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 100px 15px;
+}
+
+.game-title {
+  font-size: 40px;
+  text-align: center;
+  font-weight: 700;
+  margin-bottom: 50px;
+}
+
+[class^="game-item"] {
+  background-color: tomato;
+  visibility: hidden;
+}
+
+.game-item-1 {
+  width: 50px;
+  height: 50px;
+  visibility: visible;
+  margin: 0 auto;
+}
+
+.game-item-1:hover + .game-item-2,
+.game-item-2:hover {
+  visibility: visible;
+}
+
+.game-item-2 {
+  width: 510px;
+  height: 30px;
+}
+
+.game-item-2:hover + .game-item-3,
+.game-item-3:hover {
+  visibility: visible;
+}
+
+.game-item-3 {
+  width: 20px;
+  height: 100px;
+}
+
+.game-item-3:hover + .game-item-4,
+.game-item-4:hover {
+  visibility: visible;
+}
+
+.game-item-4 {
+  width: 100%;
+  height: 35px;
+}
+
+.game-item-4:hover + .game-item-5,
+.game-item-5:hover {
+  visibility: visible;
+}
+
+.game-item-5 {
+  width: 10px;
+  height: 150px;
+  margin-left: auto;
+  margin-right: 20px;
+}
+
+.game-item-6 {
+  visibility: visible;
+  background-color: red;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-left: auto;
+  transition: all 1s ease;
+}
+
+.game-item-6:hover {
+  transform: scale(1.5);
+  background-color: green;
+}
+
+/* =========== Task-1 =========== */
+
+.features {
+  max-width: 722px;
+  margin: 0 auto;
+  padding: 100px 15px;
+  font-family: "Inter", sans-serif;
+  color: #7d7d7d;
+  font-size: 18px;
+}
+
+.features-title,
+.features-pretitle,
+.benefits-title,
+.benefits-pretitle {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  line-height: 1.27;
+  color: #37393f;
+}
+
+.features-title {
+  font-size: 30px;
+  text-transform: capitalize;
+}
+
+.features-title:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.features-text {
+  line-height: 1.46;
+}
+
+.features-text:not(:last-child) {
+  margin-bottom: 40px;
+}
+
+.features-text p:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.features-pretitle {
+  color: #6b77e5;
+  font-size: 20px;
+}
+
+.features-pretitle:not(:last-child) {
+  margin-bottom: 12px;
+}
+
+.benefits {
+  font-size: 0;
+}
+
+.benefits:not(:last-child) {
+  margin-bottom: 50px;
+}
+
+.benefits-image {
+  display: inline-block;
+}
+
+.benefits-image:not(:last-child) {
+  margin-right: 29px;
+}
+
+.benefits-image img {
+  max-width: 100%;
+}
+
+.benefits-content {
+  display: inline-block;
+  max-width: 332px;
+  vertical-align: top;
+  font-size: 18px;
+}
+
+.benefits-title {
+  font-size: 25px;
+}
+
+.benefits-title:not(:last-child) {
+  margin-bottom: 15px;
+}
+
+.benefits-pretitle {
+  color: #40ddb6;
+  font-size: 20px;
+}
+
+.benefits-pretitle:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.benefits-item::before {
+  content: "";
+  width: 27px;
+  height: 27px;
+  background: url("../img/li.svg") 0 0 no-repeat;
+  vertical-align: middle;
+  margin-right: 8px;
+}
+
+.benefits-item:not(:last-child) {
+  margin-bottom: 30px;
+}
+
+/* =========== Task-2 =========== */
+
+.about {
+  max-width: 703px;
+  margin: 0 auto;
+  padding: 100px 15px;
+  font-family: "Inter", sans-serif;
+  color: #7d7d7d;
+  font-size: 18px;
+}
+
+.about-label {
+  color: #37393f;
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+
+.about-label::before {
+  content: "";
+  width: 12px;
+  height: 12px;
+  background-color: #40ddb6;
+  margin-right: 6px;
+}
+
+.about-label:not(:last-child) {
+  margin-bottom: 16px;
+}
+
+.about-title {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 40px;
+  color: #37393f;
+  line-height: 1.21;
+  max-width: 415px;
+  text-transform: capitalize;
+}
+
+.about-title:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.about-text {
+  line-height: 1.46;
+}
+
+.about-text p:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.about-text {
+  line-height: 1.46;
+}
+
+.about-text:not(:last-child),
+.about-list:not(:last-child) {
+  margin-bottom: 48px;
+}
+
+.about-item {
+  padding: 28px 40px;
+  border: 1px solid #e3e3e3;
+}
+
+.about-item:not(:last-child) {
+  margin-bottom: 30px;
+}
+
+.about-subtitle {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  color: #37393f;
+}
+
+.about-subtitle:not(:last-child) {
+  margin-bottom: 12px;
+}
+
+.about-subtitle::before {
+  content: "";
+  width: 27px;
+  height: 27px;
+  background: url("../img/li.svg") 0 0 no-repeat;
+  margin-right: 19px;
+  vertical-align: bottom;
+}
+
+.about-item p {
+  padding-left: 46px;
+  line-height: 1.46;
+}
+
+.about-item p:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.about-link {
+  padding: 21px 35px;
+  background-color: #6b77e5;
+  font-weight: 600;
+  color: #fff;
+  text-transform: capitalize;
+}
+
+/* =========== Task-3 =========== */
+
+.work {
+  max-width: 1250px;
+  margin: 0 auto;
+  padding: 100px 15px;
+  font-family: "Inter", sans-serif;
+  color: #7d7d7d;
+  font-size: 18px;
+}
+
+.work-label {
+  text-align: center;
+}
+
+.work-title {
+  max-width: 100%;
+  text-align: center;
+}
+
+.work-title:not(:last-child) {
+  margin-bottom: 77px;
+}
+
+.work-box {
+  font-size: 0;
+}
+
+.work-item {
+  max-width: 386px;
+  padding: 58px 43px;
+  display: inline-block;
+  background-color: #f4f4f4;
+  text-align: center;
+}
+
+.work-item:not(:last-child) {
+  margin-right: 31px;
+}
+
+.work-item:nth-child(1)::before,
+.work-item:nth-child(2)::before,
+.work-item:nth-child(3)::before {
+  content: "";
+  width: 72px;
+  height: 72px;
+  margin-top: -94px;
+  margin-bottom: 22px;
+}
+
+.work-item:nth-child(1)::before {
+  background: url("../img/work/01.svg") center / 72px 72px no-repeat;
+}
+
+.work-item:nth-child(2)::before {
+  background: url("../img/work/02.svg") center / 72px 72px no-repeat;
+}
+
+.work-item:nth-child(3)::before {
+  background: url("../img/work/03.svg") center / 72px 72px no-repeat;
+}
+
+.work-subtitle {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 25px;
+  color: #37393f;
+  line-height: 1.27;
+}
+
+.work-subtitle:not(:last-child) {
+  margin-bottom: 16px;
+}
+
+.work-text:not(:last-child) {
+  margin-bottom: 37px;
+}
+
+.work-text p {
+  font-size: 18px;
+  color: #7d7d7d;
+  line-height: 1.46;
+}
+
+.work-text p:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.work-link {
+  color: #6b77e5;
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+/* =========== Task-4 =========== */
+
+.develop {
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 100px 15px;
+  color: #000;
+  font-family: "Cormorant Infant", serif;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.develop-wrapper {
+  font-size: 0;
+}
+
+.develop-title,
+.develop-item,
+.develop-content {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.develop-title {
+  padding-top: 118px;
+  max-width: 470px;
+  font-size: 60px;
+  line-height: 1.15;
+}
+
+.develop-title:not(:last-child) {
+  margin-right: 10px;
+}
+
+.develop-title::after {
+  content: "";
+  display: block;
+  width: 304px;
+  height: 3px;
+  background-color: #78473b;
+  margin-top: 13px;
+}
+
+.develop-item {
+  max-width: 334px;
+}
+
+.develop-item:not(:last-child) {
+  margin-right: 55px;
+}
+
+.develop-image {
+  border: 1px solid #000;
+}
+
+.develop-image:not(:last-child) {
+  margin-bottom: 34px;
+}
+
+.develop-image img {
+  max-width: 100%;
+  margin: 9px -10px -9px 10px;
+}
+
+.develop-subtitle,
+.develop-price {
+  font-size: 24px;
+  line-height: 1.4;
+}
+
+.develop-subtitle:not(:last-child) {
+  margin-bottom: 5px;
+}
+
+.develop-content {
+  margin-top: -35px;
+}
+
+.develop-label {
+  max-width: 339px;
+  font-size: 46px;
+  line-height: 1.13;
+}
+
+.develop-label:not(:last-child) {
+  margin-bottom: 31px;
+}
