@@ -191,6 +191,7 @@ body {
   max-width: 1000px;
   margin: 0 auto;
   padding: 100px 15px;
+  background-color: grey;
 }
 
 .game-title {
@@ -254,19 +255,20 @@ body {
   margin-right: 20px;
 }
 
-.game-item-6 {
+.game-item-5:hover + .game-item-6,
+.game-item-6:hover {
   visibility: visible;
+  transform: scale(1.5);
+  background-color: green;
+}
+
+.game-item-6 {
   background-color: red;
   width: 50px;
   height: 50px;
   border-radius: 50%;
   margin-left: auto;
   transition: all 1s ease;
-}
-
-.game-item-6:hover {
-  transform: scale(1.5);
-  background-color: green;
 }
 
 /* =========== Task-1 =========== */
@@ -330,6 +332,7 @@ body {
 
 .benefits-image {
   display: inline-block;
+  max-width: 331px;
 }
 
 .benefits-image:not(:last-child) {
@@ -484,6 +487,10 @@ body {
   text-transform: capitalize;
 }
 
+.about-link:hover {
+  background-color: #40ddb6;
+}
+
 /* =========== Task-3 =========== */
 
 .work {
@@ -505,7 +512,7 @@ body {
 }
 
 .work-title:not(:last-child) {
-  margin-bottom: 77px;
+  margin-bottom: 41px;
 }
 
 .work-box {
@@ -514,9 +521,7 @@ body {
 
 .work-item {
   max-width: 386px;
-  padding: 58px 43px;
   display: inline-block;
-  background-color: #f4f4f4;
   text-align: center;
 }
 
@@ -524,14 +529,17 @@ body {
   margin-right: 31px;
 }
 
-.work-item:nth-child(1)::before,
-.work-item:nth-child(2)::before,
-.work-item:nth-child(3)::before {
+.work-content {
+  width: 100%;
+  padding: 58px 43px;
+  background-color: #f4f4f4;
+}
+
+.work-item::before {
   content: "";
   width: 72px;
   height: 72px;
-  margin-top: -94px;
-  margin-bottom: 22px;
+  margin-bottom: -35px;
 }
 
 .work-item:nth-child(1)::before {
@@ -577,6 +585,11 @@ body {
   font-size: 18px;
   font-weight: 600;
   text-transform: capitalize;
+}
+
+.work-link:hover {
+  text-decoration: underline;
+  color: #40ddb6;
 }
 
 /* =========== Task-4 =========== */
@@ -626,8 +639,12 @@ body {
   max-width: 334px;
 }
 
-.develop-item:not(:last-child) {
+.develop-link:not(:last-child) {
   margin-right: 55px;
+}
+
+.develop-link:hover .develop-subtitle {
+  text-decoration: underline;
 }
 
 .develop-image {
