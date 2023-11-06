@@ -1,0 +1,246 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:600&family=Inter:regular&display=swap");
+@import url("reset.css");
+
+body {
+  font-size: 18px;
+  font-family: sans-serif;
+}
+
+.wrapper {
+  overflow: clip;
+  min-height: 100%;
+}
+
+[class*="__container"] {
+  max-width: 1250px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.page {
+  padding-top: 80px;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  width: 100%;
+  background-color: #b2ca45;
+  font-size: 20px;
+}
+.header__container {
+  text-align: center;
+}
+
+.menu__item {
+  position: relative;
+  display: inline-block;
+}
+.menu__link {
+  padding: 20px;
+}
+
+.menu__link:hover {
+  text-decoration: underline;
+}
+
+.sub-menu {
+  position: absolute;
+  width: 100%;
+  padding-top: 5px;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.menu__item:hover .sub-menu {
+  opacity: 1;
+  visibility: visible;
+}
+
+.sub-menu__item {
+  position: relative;
+  background-color: #ad6b6b;
+}
+
+.sub-menu__link {
+  padding: 10px;
+}
+
+.sub-menu__link:hover {
+  text-decoration: underline;
+}
+
+.add-menu {
+  position: absolute;
+  left: 100%;
+  bottom: -30px;
+  width: 150px;
+  padding-left: 3px;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.sub-menu__item:hover .add-menu {
+  opacity: 1;
+  visibility: visible;
+}
+
+.add-menu__item {
+  background-color: #6790c2;
+}
+
+.add-menu__link {
+  padding: 10px;
+}
+
+.add-menu__link:hover {
+  text-decoration: underline;
+}
+
+.section {
+  padding: 30px 0;
+  font-size: 0;
+}
+
+.section__aside {
+  position: sticky;
+  top: 60px;
+  display: inline-block;
+  width: 200px;
+  padding: 50px 30px;
+  vertical-align: top;
+  background-color: tomato;
+  font-size: 20px;
+}
+
+.section__content {
+  display: inline-block;
+  max-width: 800px;
+  font-size: 18px;
+  background-color: #d1b36d;
+  padding: 15px;
+}
+
+/* ============================================== */
+
+.team {
+  padding: 150px 0;
+}
+
+.team__container {
+}
+
+.team__items {
+  font-size: 0;
+}
+
+.team__item {
+  display: inline-block;
+  margin-right: 31px;
+  margin-bottom: 31px;
+}
+
+.team__item:nth-child(3n) {
+  margin-right: 0;
+}
+
+.item-team {
+  position: relative;
+  max-width: 386px;
+  width: 100%;
+  height: 532px;
+}
+
+.item-team::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: rgba(107, 119, 229, 0.7);
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+}
+
+.item-team:hover::before {
+  opacity: 1;
+}
+
+.item-team__image img {
+  width: 100%;
+}
+
+.item-team__info {
+  position: absolute;
+  bottom: 22px;
+  left: 22px;
+  right: 22px;
+  padding: 24px 20px;
+  background-color: #fff;
+  text-align: center;
+}
+
+.item-team__name {
+  font-family: "Poppins", sans-serif;
+  color: #37393f;
+  font-size: 25px;
+  font-weight: 600;
+  line-height: 1.35;
+}
+
+.item-team__name:not(:last-child) {
+  margin-bottom: 4px;
+}
+
+.item-team__position {
+  font-family: "Inter", sans-serif;
+  color: #7d7d7d;
+  font-size: 18px;
+  line-height: 1.35;
+}
+
+.team-item__social {
+  position: absolute;
+  top: 45%;
+  left: 0;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.item-team:hover .team-item__social {
+  opacity: 1;
+  visibility: visible;
+}
+
+.social {
+  font-size: 0;
+  width: 100%;
+  text-align: center;
+  padding: 0 20px;
+}
+
+.social__item {
+  display: inline-block;
+}
+
+.social__item:not(:last-child) {
+  margin-right: 13px;
+}
+
+.social__link {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  overflow: hidden;
+  opacity: 0.8;
+}
+
+.social__link:hover {
+  opacity: 1;
+}
+
+.social__link img {
+  width: 100%;
+}
