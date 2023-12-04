@@ -191,7 +191,7 @@ body {
 }
 
 .form-info__item label {
-  display: block;
+  display: inline-block;
   font-style: normal;
   font-weight: 600;
   line-height: 1.2;
@@ -383,7 +383,7 @@ body {
 }
 
 .billing-form__label {
-  display: block;
+  display: inline-block;
   font-size: 16px;
   font-weight: 600;
   line-height: 1.2;
@@ -540,7 +540,7 @@ body {
 }
 
 .payment-form__label-radio {
-  display: flex;
+  display: inline-flex;
   gap: 19px;
   font-size: 20px;
   font-weight: 700;
@@ -580,6 +580,7 @@ body {
 }
 
 .payment-form__radio--hidden .payment-form__label-radio {
+  display: flex;
   cursor: auto;
 }
 
