@@ -179,6 +179,9 @@
   }
 }
 @media (max-width: 940px) {
+  .menu-open body {
+    overflow: hidden;
+  }
   .header__container {
     min-height: 60px;
   }
@@ -352,21 +355,21 @@
 }
 .hero__link-video {
   text-decoration: underline;
-  transition: all 0.3s;
+  transition: text-decoration-color 0.3s;
 }
 @media (any-hover: hover) {
   .hero__link-video:hover {
     text-decoration-color: transparent;
-    transform: scale(1.05);
   }
 }
 .hero__images {
   flex: 0 1 47%;
   display: flex;
+  justify-content: center;
   gap: 32px;
 }
 .hero__image {
-  flex: 1 1 50%;
+  flex: 0 1 50%;
 }
 .hero__image img {
   width: 100%;
