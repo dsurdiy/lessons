@@ -1,0 +1,40 @@
+@import "vars";
+
+.wrapper {
+   min-height: 100%;
+   overflow: clip;
+   display: flex;
+   flex-direction: column;
+   > main {
+      flex-grow: 1;
+   }
+}
+
+[class*="__container"] {
+   max-width: $containerWidth;
+   margin: 0 auto;
+   padding: 0 15px;
+}
+
+body {
+   font-family: "Causten";
+}
+
+.header,
+.footer {
+   padding: 30px;
+   font-size: 24px;
+   letter-spacing: 0.33px;
+   text-align: center;
+}
+
+.header {
+   background-color: $whiteColor;
+   color: $darkColor;
+   border-bottom: 2px solid $darkColor;
+}
+
+.footer {
+   background-color: $darkColor;
+   color: $whiteColor;
+}
