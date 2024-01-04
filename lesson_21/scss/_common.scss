@@ -1,0 +1,79 @@
+@import "vars";
+
+.wrapper {
+   min-height: 100%;
+   overflow: clip;
+   display: flex;
+   flex-direction: column;
+   > main {
+      flex-grow: 1;
+   }
+}
+
+[class*="__container"] {
+   max-width: $containerWidth;
+   margin: 0 auto;
+   padding: 0 15px;
+}
+
+body {
+   @media (max-width: $mobile) {
+      .menu-open & {
+         overflow: hidden;
+      }
+   }
+}
+
+.button {
+   padding: 16px 72px;
+   border-radius: 8px;
+   background-color: $white;
+   color: $dark;
+   font-family: "Causten";
+   font-size: 24px;
+   font-weight: 700;
+   transition: all 0.3s;
+   @media (max-width: $mobile) {
+      padding: 16px 45px;
+      font-size: 20px;
+   }
+   @media (any-hover: hover) {
+      &:hover {
+         background-color: $accent;
+         color: $white;
+      }
+   }
+   &.button--small {
+      padding: 12px 44px;
+      font-size: 18px;
+      font-weight: 600;
+   }
+}
+
+.section-title {
+   color: $dark;
+   font-family: "Core Sans C";
+   font-size: 34px;
+   font-weight: 600;
+   letter-spacing: 0.68px;
+   display: flex;
+   gap: 20px;
+   @media (max-width: $tablet) {
+      font-size: 28px;
+   }
+   @media (max-width: $mobileSmall) {
+      font-size: 24px;
+      gap: 10px;
+   }
+   @media (max-width: $mobileExtraSmall) {
+      font-size: 22px;
+   }
+   &::before {
+      content: "";
+      flex: 0 0 6px;
+      width: 6px;
+      background-color: $accent;
+      border-radius: 10px;
+      margin-top: -3px;
+   }
+}

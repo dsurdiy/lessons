@@ -1,0 +1,279 @@
+.footer {
+   padding: 60px 0;
+   background-color: $dark;
+   color: $light;
+   font-family: "Causten";
+   font-size: 18px;
+   @media (max-width: $pc) {
+      padding: 40px 0;
+   }
+   @media (max-width: $mobile) {
+      font-size: 16px;
+   }
+   @media (max-width: $mobileExtraSmall) {
+      padding: 30px 0;
+   }
+   // .footer__container
+   &__container {
+      max-width: 1250px;
+   }
+   // .footer__nav
+   &__nav {
+   }
+   // .footer__box
+   &__box {
+      padding: 0 75px;
+      display: flex;
+      column-gap: 50px;
+      justify-content: space-between;
+      align-items: flex-end;
+      @media (max-width: $pc) {
+         padding: 0;
+         justify-content: center;
+         align-items: center;
+      }
+      @media (max-width: $mobile) {
+         flex-direction: column;
+         row-gap: 15px;
+      }
+      &:not(:last-child) {
+         margin-bottom: 44px;
+         @media (max-width: $tablet) {
+            margin-bottom: 20px;
+         }
+      }
+   }
+   // .footer__social
+   &__social {
+   }
+   // .footer__app
+   &__app {
+   }
+   // .footer__popular
+   &__popular {
+      padding: 30px 32px 30px 75px;
+      border-top: 1px solid $grey;
+      border-bottom: 1px solid $grey;
+      @media (max-width: $tablet) {
+         padding: 15px;
+      }
+      &:not(:last-child) {
+         margin-bottom: 35px;
+         @media (max-width: $mobile) {
+            margin-bottom: 20px;
+         }
+      }
+   }
+   // .footer__title-popular
+   &__title-popular {
+      font-size: 28px;
+      font-weight: 700;
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 15px;
+      @media (max-width: $tablet) {
+         font-size: 24px;
+      }
+      @media (max-width: $mobile) {
+         font-size: 20px;
+      }
+      &::after {
+         content: "";
+         flex: 0 0 20px;
+         width: 20px;
+         height: 12px;
+         background: url("../img/icons/chevron-down.svg") 0 0 / contain no-repeat;
+         @media (max-width: $tablet) {
+            flex: 0 0 12px;
+            width: 12px;
+            height: 8px;
+         }
+      }
+   }
+   // .footer__copy
+   &__copy {
+      font-weight: 700;
+      text-align: center;
+   }
+}
+
+.nav-footer {
+   padding: 0 75px;
+   display: grid;
+   grid-template-columns: repeat(4, auto);
+   column-gap: 80px;
+   @media (max-width: $pc) {
+      padding: 0;
+      column-gap: 30px;
+   }
+   @media (max-width: $tablet) {
+      &:not(:last-child) {
+         margin-bottom: 25px;
+      }
+   }
+   @media (max-width: $mobile) {
+      grid-template-columns: repeat(3, 1fr);
+      row-gap: 30px;
+   }
+   @media (max-width: $mobileSmall) {
+      grid-template-columns: repeat(2, auto);
+      gap: 15px;
+   }
+   // .nav-footer__list
+   &__list {
+      @media (max-width: $mobile) {
+         text-align: center;
+         &.nav-footer__list--big {
+            grid-column: span 3;
+            @media (max-width: $mobileExtraSmall) {
+               grid-column: span 2;
+            }
+         }
+      }
+      @media (max-width: $mobileExtraSmall) {
+         &:nth-child(3) {
+            grid-column: span 2;
+         }
+      }
+   }
+   // .nav-footer__item
+   &__item {
+      line-height: 217%;
+      @media (max-width: $tablet) {
+         line-height: 140%;
+      }
+      &:first-child:not(:last-child) {
+         margin-bottom: 15px;
+         @media (max-width: $mobile) {
+            margin-bottom: 8px;
+         }
+      }
+      &:not(:last-child) {
+         margin-bottom: 5px;
+      }
+   }
+   // .nav-footer__title
+   &__title {
+      font-size: 28px;
+      font-weight: 700;
+      @media (max-width: $tablet) {
+         font-size: 24px;
+      }
+      @media (max-width: $mobile) {
+         font-size: 20px;
+      }
+   }
+   // .nav-footer__link
+   &__link {
+      font-weight: 500;
+      text-decoration: underline;
+      text-decoration-color: transparent;
+      transition: text-decoration-color 0.3s;
+      @media (any-hover: hover) {
+         &:hover {
+            text-decoration-color: initial;
+         }
+      }
+   }
+   // .nav-footer__address
+   &__address {
+      font-style: normal;
+      a {
+         &:not(:last-child) {
+            margin-bottom: 5px;
+            @media (max-width: $mobileSmall) {
+               margin-bottom: 0;
+            }
+         }
+      }
+      span {
+         display: block;
+         &:not(:last-child) {
+            margin-bottom: 5px;
+            @media (max-width: $mobileSmall) {
+               margin-bottom: 0;
+            }
+         }
+      }
+   }
+}
+
+.social-footer {
+   display: flex;
+   gap: 10px;
+   // .social-footer__item
+   &__item {
+   }
+   // .social-footer__link
+   &__link {
+      width: 37px;
+      height: 37px;
+      border-radius: 10px;
+      overflow: hidden;
+      background-color: $light;
+      transition: transform 0.3s;
+      @media (any-hover: hover) {
+         &:hover {
+            transform: scale(1.1);
+         }
+      }
+      img {
+         width: 100%;
+         height: 100%;
+         object-fit: contain;
+      }
+   }
+}
+
+.app-footer {
+   // .app-footer__title
+   &__title {
+      font-size: 28px;
+      font-weight: 700;
+      line-height: 217%;
+      @media (max-width: $tablet) {
+         line-height: 140%;
+         font-size: 24px;
+      }
+      @media (max-width: $mobile) {
+         font-size: 20px;
+         text-align: center;
+      }
+      &:not(:last-child) {
+         margin-bottom: 19px;
+         @media (max-width: $pc) {
+            margin-bottom: 5px;
+         }
+      }
+   }
+   // .app-footer__items
+   &__items {
+      display: flex;
+      column-gap: 21px;
+      a {
+         width: 154px;
+         height: 51px;
+         border-radius: 10px;
+         overflow: hidden;
+         @media (max-width: $mobile) {
+            width: 120px;
+            height: 40px;
+         }
+         @media (any-hover: hover) {
+            &:hover {
+               img {
+                  transform: scale(1.05);
+               }
+            }
+         }
+      }
+      img {
+         width: 100%;
+         height: 100%;
+         object-fit: cover;
+         transition: transform 0.3s;
+      }
+   }
+}
