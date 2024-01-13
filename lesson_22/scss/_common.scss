@@ -1,0 +1,226 @@
+@import "vars";
+@import "functions";
+
+.wrapper {
+   min-height: 100%;
+   overflow: clip;
+   display: flex;
+   flex-direction: column;
+   > main {
+      flex-grow: 1;
+   }
+}
+
+[class*="__container"] {
+   max-width: $containerWidth;
+   margin: 0 auto;
+   padding: 0 toRem(15);
+}
+
+body {
+   color: $grey;
+   font-family: "Inter", sans-serif;
+   font-size: toRem(18);
+   @media (max-width: $mobile) {
+      .menu-open & {
+         overflow: hidden;
+      }
+   }
+}
+
+.logo {
+   display: flex;
+   align-items: center;
+   gap: toRem(4);
+   position: relative;
+   z-index: 5;
+   // .logo__image
+   &__image {
+      flex: 0 0 toRem(42);
+      width: toRem(42);
+      height: toRem(29);
+      object-fit: contain;
+   }
+   // .logo__text
+   &__text {
+      color: $dark;
+      font-family: "Poppins", sans-serif;
+      font-size: toRem(25);
+      font-weight: 700;
+      @media (max-width: $mobileMedium) {
+         display: none;
+      }
+      span {
+         color: $violet;
+      }
+   }
+}
+
+.button {
+   min-width: toRem(184);
+   padding: toRem(22);
+   text-align: center;
+   color: $dark;
+   font-weight: 600;
+   text-transform: capitalize;
+   background-color: $green;
+   transition: all 0.3s;
+   @media (max-width: $tablet) {
+      padding: toRem(17);
+   }
+   @media (max-width: $mobile) {
+      min-width: toRem(130);
+      font-size: toRem(16);
+      padding: toRem(15) toRem(10);
+   }
+   @media (any-hover: hover) {
+      &:hover {
+         background-color: $violet;
+         color: $white;
+      }
+   }
+   &.button--violet {
+      background-color: $violet;
+      color: $white;
+      @media (any-hover: hover) {
+         &:hover {
+            background-color: $green;
+            color: $dark;
+         }
+      }
+   }
+   &.button--dark {
+      background-color: $dark;
+      color: $white;
+      @media (any-hover: hover) {
+         &:hover {
+            background-color: $green;
+            color: $dark;
+         }
+      }
+   }
+   &.button--color-white {
+      color: $white;
+   }
+}
+
+.section-header {
+   &.section-header--text-center {
+      text-align: center;
+   }
+   // .section-header__sub-title
+   &__sub-title {
+      color: $dark;
+      font-weight: 500;
+      text-transform: capitalize;
+      display: flex;
+      align-items: center;
+      gap: toRem(6);
+      @media (max-width: $mobileMedium) {
+         font-size: toRem(16);
+      }
+      .section-header--color-white & {
+         color: $white;
+      }
+      .section-header--text-center & {
+         justify-content: center;
+      }
+      .hero & {
+         font-weight: 600;
+         @media (max-width: $tablet) {
+            justify-content: center;
+         }
+      }
+      .advantages &,
+      .projects & {
+         @media (max-width: $tablet) {
+            justify-content: center;
+         }
+      }
+      .testimonials & {
+         @media (max-width: $pc) {
+            justify-content: center;
+         }
+      }
+      &:not(:last-child) {
+         margin-bottom: toRem(16);
+         @media (max-width: $mobileLarge) {
+            margin-bottom: toRem(10);
+         }
+      }
+      &::before {
+         content: "";
+         flex: 0 0 toRem(12);
+         width: toRem(12);
+         height: toRem(12);
+         background-color: $green;
+      }
+   }
+   // .section-header__title
+   &__title {
+      color: $dark;
+      font-family: "Poppins";
+      font-size: toRem(40);
+      font-weight: 700;
+      line-height: 121%;
+      text-transform: capitalize;
+      @media (max-width: $mobile) {
+         font-size: toRem(34);
+      }
+      @media (max-width: $mobileLarge) {
+         font-size: toRem(28);
+      }
+      .section-header--color-white & {
+         color: $white;
+      }
+      .hero & {
+         font-size: toRem(60);
+         line-height: 110%;
+         @media (max-width: $pc) {
+            font-size: toRem(50);
+         }
+         @media (max-width: $mobile) {
+            font-size: toRem(42);
+         }
+         @media (max-width: $mobileMedium) {
+            font-size: toRem(35);
+         }
+         span {
+            color: $green;
+         }
+      }
+      .projects & {
+         text-transform: none;
+      }
+      &:not(:last-child) {
+         margin-bottom: toRem(20);
+         @media (max-width: $mobile) {
+            margin-bottom: toRem(10);
+         }
+      }
+   }
+   // .section-header__text
+   &__text {
+      line-height: 146%;
+      @media (max-width: $mobileMedium) {
+         font-size: toRem(16);
+      }
+      .section-header--color-white & {
+         color: $white;
+      }
+      .section-header--text-center & {
+         text-align: center;
+      }
+      .hero & {
+         color: $secondaryGrey;
+      }
+      p {
+         &:not(:last-child) {
+            margin-bottom: toRem(15);
+            @media (max-width: $tablet) {
+               margin-bottom: toRem(7);
+            }
+         }
+      }
+   }
+}

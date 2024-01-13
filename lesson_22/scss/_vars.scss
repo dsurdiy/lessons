@@ -1,0 +1,20 @@
+@import "functions";
+
+// Container
+$containerWidth: toRem(1250);
+
+// Colors
+$dark: #37393f;
+$white: #fff;
+$grey: #7d7d7d;
+$secondaryGrey: #b9b9b9;
+$green: #40ddb6;
+$violet: #6b77e5;
+
+// Breakpoints
+$pc: toEm(1199.98);
+$tablet: toEm(991.98);
+$mobile: toEm(767.98);
+$mobileLarge: toEm(574.98);
+$mobileMedium: toEm(479.98);
+$mobileSmall: toEm(374.98);
