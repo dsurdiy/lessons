@@ -1,0 +1,29 @@
+@import "functions";
+
+body {
+	font-size: toRem(24);
+}
+
+.wrapper {
+	overflow: clip;
+	display: flex;
+	flex-direction: column;
+	min-height: 100%;
+	main {
+		flex-grow: 1;
+	}
+}
+
+.button {
+	display: block;
+	padding: toRem(20) toRem(30);
+	text-align: center;
+	background-color: #808080;
+	font-size: toRem(20);
+}
+
+.link {
+	display: block;
+	color: blue;
+	text-decoration: underline;
+}
